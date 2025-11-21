@@ -42,7 +42,7 @@ jobs:
           echo "Using NEXT_PUBLIC_BASE_PATH=${NEXT_PUBLIC_BASE_PATH:-/(empty)}"
 
       - name: Build and export static site
-        run: npm run export
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
